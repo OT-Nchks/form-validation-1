@@ -1,189 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap.css" rel="stylesheet">
+<title>Form Login</title>
 
-    <link href="bootstrap.css" rel="stylesheet">
-
-    <title>Form Login</title>
-
-                 <style type="text/css">
-                @import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+<style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-                .btn-custom{
-                background: linear-gradient(to bottom, #fbebb4, #fad366); 
-                color: #3c3c3c;
-                border: 1px solid #b4ae9e;
-                }
-                .btn-custom :hover{
-                background: linear-gradient(to bottom, #e9cf9c, #ffcb49); 
-                color: #dfdfdf;
-                border: 3px solid #dbdbdb;
-                box-shadow: inset 0 3px 5px rgba(107, 99, 82, 0.325);
-                transition:0.5s;
-                }
-                .btn-custom :disabled{
-                background: #b8b19c; 
-                color: #dfdfdf;
-                }
+        .btn-custom{
+        background: linear-gradient(to bottom, #fbebb4, #fad366); 
+        color: #3c3c3c;
+        border: 1px solid #b4ae9e;
+        }
+        .btn-custom :hover{
+        background: linear-gradient(to bottom, #e9cf9c, #ffcb49); 
+        color: #dfdfdf;
+        border: 3px solid #dbdbdb;
+        box-shadow: inset 0 3px 5px rgba(107, 99, 82, 0.325);
+        transition:0.5s;
+        }
+        .btn-custom :disabled{
+        background: #b8b19c; 
+        color: #dfdfdf;
+        }
 
-                body{
-                        font-family:poppins, sans-serif;
-                }
+        body{
+        font-family:poppins, sans-serif;
+        }
 
-                 .form-container{
-				    align-items: center;
-				    border-radius: 8px;
-				    box-shadow:0 2px 8px 3px rgba(0, 0, 0, .3);
-				    box-sizing: border-box;
-				    margin: 40px 0 0;
-				    padding: 10px 13px 15px 13px;
-			    }
+        .form-container{
+	align-items: center;
+	border-radius: 8px;
+	box-shadow:0 2px 8px 3px rgba(0, 0, 0, .3);
+	box-sizing: border-box;
+	margin: 40px 0 0;
+	padding: 10px 13px 15px 13px;
+	}
 
-                label, h5{
-                    font-weight:600;
-                }
+        label, h5{
+        font-weight:600;
+        }
 
-                span a{
-                    text-decoration: none;
-                }
+        span a{
+        text-decoration: none;
+        }
 
-                @media (max-width: 576px) {
-                    .smdmq{
-                        margin-top:3em;
-                    }
+        @media (max-width: 576px) {
+        .smdmq{
+        margin-top:3em;
+        }
 
-                    label{
-                    font-weight:600;
-                    font-size:15px;
-                    }
+        label{
+        font-weight:600;
+        font-size:15px;
+        }
 
-                    input, span{
-                        font-size:15px;
-                    }
-                }
-
-
-                </style>
-
+        input, span{
+        font-size:15px;
+        }
+        }
+</style>
 </head>
-
-                <body>
-
-            <!--PROJECT 1-->                    
-                            <div class="main-container">
-             
-                                        <div class="row">
-                                                <div class="col-3"></div>
-
-                                                <div class="col-sm-6 smdmq">
-                                                        <form method="get" action="https://www.amazon.com/" class="form-container px-5" id="myForm">
-                                                                    <div class="form-group mb-3 mt-3">
-                                                                        <label for="city">City</label>
-                                                                        <input type="text" name="city" id="city" class="form-control mb-3" required/>
-                                                                    </div>
-
-                                                                    <div class="form-group mb-3">
-                                                                        <label for="state">State / Province or region</label>
-                                                                        <input type="text" name="state" id="state" class="form-control mb-3" required/>
-                                                                    </div>
-
-                                                                    <div class="form-group mb-4">
-                                                                        <label for="postalcode">Postal code</label>
-                                                                        <input type="text" name="postalcode" id="postalcode" class="form-control" required/>
-                                                                    </div>
-
-                                                                    <div class="mb-4">
-                                                                        <input type="checkbox" name="terms" id="check"/> <span>Check here to indicate that you have read and agree to the terms of the <a href="
-                                                                    #">AWS Customer Agreement</a>.</span>
-                                                                    </div>
-
-                                                                    <button type="submit" class="btn btn-custom col-12 mb-3" id="btn1">Create Account and Continue</button>
-                                                                    <p id="error-message" style="color: red; display: none; font-size:13px;"><i>Please agree to the terms and conditions</i></p>
-                                                        </form>
+<body>
+	<!--PROJECT 1-->                    
+        <div class="main-container">
+        	<div class="row">
+        		<div class="col-3"></div>
+                        	<div class="col-sm-6 smdmq">
+                                        <form method="get" action="https://www.amazon.com/" class="form-container px-5" id="myForm">
+                                                <div class="form-group mb-3 mt-3">
+                                                <label for="city">City</label>
+                                                <input type="text" name="city" id="city" class="form-control mb-3" required/>
                                                 </div>
 
+                                                <div class="form-group mb-3">
+                                                <label for="state">State / Province or region</label>
+                                                <input type="text" name="state" id="state" class="form-control mb-3" required/>
+                                                </div>
+
+                                                <div class="form-group mb-4">
+                                                <label for="postalcode">Postal code</label>
+                                                <input type="text" name="postalcode" id="postalcode" class="form-control" required/>
+                                                </div>
+
+                                                <div class="mb-4">
+                                                <input type="checkbox" name="terms" id="check"/> 
+						<span>Check here to indicate that you have read and agree to the terms of the <a href="#">AWS Customer Agreement</a>.</span>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-custom col-12 mb-3" id="btn1">Create Account and Continue</button>
+                                                <p id="error-message" style="color: red; display: none; font-size:13px;"><i>Please agree to the terms and conditions</i></p>
+                                        </form>
+                                                </div>
                                                 <div class="col-3"></div>
-                                        </div>
+                                </div>
 
 
 
-            <!--PROJECT 2-->
-                                        <div class="row">
-                                            <div class="col-3"></div>
-
-                                            <div class="col-sm-6 smdmq">
-                                                    <form method="get" action="https://moatacademy.com/" class="form-container px-5">
-                                                                <div class="form-group mb-3 mt-3">
-                                                                    <h5>Where did you hear from us?</h5> <br>
-                                                                    <input type="checkbox" name="select"  id="sel0"/> Select All <br>
-                                                                    <input type="checkbox" name="select" id="sel1"/> Facebook <br>
-                                                                    <input type="checkbox" name="select" id="sel2"/> Google Ads <br>
-                                                                    <input type="checkbox" name="select" id="sel3"/> Newspaper <br>
-                                                                    <input type="checkbox" name="select" id="sel4"/> Linda Ikeji's Blog <br>
-                                                                    <input type="checkbox" name="select" id="sel5"/> Moat Academy <br>
-                                                                    <input type="checkbox" name="select" id="sel6"/> Punch Online <br>
-                                                                    <input type="checkbox" name="select" id="sel7"/> Others
-                                                                </div>
-
-
-                                                                <button type="submit" class="btn btn-custom col-12 mb-3" id="btn2">Submit</button>
-                                                    </form>
+        <!--PROJECT 2-->
+                <div class="row">
+                	<div class="col-3"></div>
+                                <div class="col-sm-6 smdmq">
+                                        <form method="get" action="https://moatacademy.com/" class="form-container px-5">
+                                                <div class="form-group mb-3 mt-3">
+                                                        <h5>Where did you hear from us?</h5> <br>
+                                                        <input type="checkbox" name="select"  id="sel0"/> Select All <br>
+                                                        <input type="checkbox" name="select" id="sel1"/> Facebook <br>
+                                                        <input type="checkbox" name="select" id="sel2"/> Google Ads <br>
+                                                        <input type="checkbox" name="select" id="sel3"/> Newspaper <br>
+                                                        <input type="checkbox" name="select" id="sel4"/> Linda Ikeji's Blog <br>
+                                                        <input type="checkbox" name="select" id="sel5"/> Moat Academy <br>
+                                                        <input type="checkbox" name="select" id="sel6"/> Punch Online <br>
+                                                        <input type="checkbox" name="select" id="sel7"/> Others
+                                                </div>
+                                                	<button type="submit" class="btn btn-custom col-12 mb-3" id="btn2">Submit</button>
+                                        </form>
                                             </div>
-
                                             <div class="col-3"></div>
                                     </div>
-                            </div>
+				</div>
                                 
 
 
 
 
 
+	
 
-                    
-                        <!--JQUERY CODE-->
-                                <script src="jquery.min.js"></script>
-                                <script>
-                                        $(document).ready(function(){
-//PROJECT 1//
-
-                        //TO ENABLE THE BUTTON ONLY WHEN THEY AGREE TO TERMS AND CONDITIONS
-                       $("#btn1").prop("disabled", true); //button is disabled on default
-
-                        $("#check").click(function(){
-                         
-                            var t= $("#check").prop('checked');
-
-                            if( t == false){
-                                //alert('Agree to the terms and conditions')
-                                $("#btn1").prop("disabled", true); 
-                                $("#error-message").show();
-                            }
-                            else{
-                                $("#btn1").prop("disabled", false); 
-                                $("#error-message").hide();
-                            }
-                        }); 
-
-
-
-   //PROJECT 2//                     
-                        //TO SELECT ALL THE CHECKBOXES AT ONCE
-                                            $("#sel0").click(function() {
-                                            
-                                            var checkAll = $(this).prop("checked");
-                                            
-                                           $("input[name='select']").prop("checked", checkAll);
-                                        });
-
-
-
-                               })
-
-
-                                </script>
-                </body>
+	<!--JQUERY CODE-->
+	<script src="jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+	//PROJECT 1//
+	
+	        //TO ENABLE THE BUTTON ONLY WHEN THEY AGREE TO TERMS AND CONDITIONS
+	        $("#btn1").prop("disabled", true); //button is disabled on default
+	        $("#check").click(function(){
+	        var t= $("#check").prop('checked');
+	
+	        if( t == false){
+	        //alert('Agree to the terms and conditions')
+	        $("#btn1").prop("disabled", true); 
+	        $("#error-message").show();
+	        }
+	        else{
+	        $("#btn1").prop("disabled", false); 
+	        $("#error-message").hide();
+	        }
+	        }); 
+	
+	
+	
+	   //PROJECT 2//                     
+	        //TO SELECT ALL THE CHECKBOXES AT ONCE
+	        $("#sel0").click(function() {
+	        var checkAll = $(this).prop("checked");
+	        $("input[name='select']").prop("checked", checkAll);
+	        });
+	        })
+	</script>
+</body>
 </html>
